@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <style>
+  .img-cover {
+    object-fit: cover;
+  }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <div class="container">
+      <div class="row" id="content">
+        <cards :show-data="showData"></cards>
+      </div>
+      <div class="d-flex justify-content-center">
+        <nav aria-label="Page navigation example">
+          <ul class="pagination" id="pageid">
+            <pages :pages="pageData" @page-btn="switchPage"></pages>
+          </ul>
+        </nav>
+      </div>
+    </div>
+ </div>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.5/axios.js" integrity="sha512-FchLfuM3Ci/+q/GnIbfZa+cieb7FA0gDZHXK3USCFpYpeldq8NerYV3rwVeLmwlhSfbTTGHMbbNhP6YWKtbuhQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.45/vue.esm-browser.min.js" integrity="sha512-WGg0/WoA70+G9/UuJC/JURgEaSFOobm17M/T6aATcSeVAgeFbuy/YO5IyU8TDDnVEBt/ZqeHrNMZeriiXfD65g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+  <script src="./all.js" type="module"></script>
+</body>
+</html>
